@@ -81,8 +81,8 @@
         default_layer {
             bindings = <
 &mt ESC Q         &kp W           &kp E     &kp R                             &kp T                                                                                     &kp Y                &kp U  &kp I      &kp O             &kp P
-&kp A             &kp S           &kp D     &kp F                             &kp G             &kp TAB                               &kp BACKSPACE                     &kp H                &kp J  &kp K      &kp L             &mt PLUS MINUS
-&mt LEFT_SHIFT Z  &kp X           &kp C     &kp V                             &kp B             &kp BACKSPACE                         &kp APOS                          &kp N                &kp M  &kp COMMA  &mt SLASH PERIOD  &mt KP_EQUAL SEMI
+&kp A             &kp S           &kp D     &kp F                             &kp G             &kp BACKSPACE                         &kp BACKSPACE                     &kp H                &kp J  &kp K      &kp L             &mt PLUS MINUS
+&mt LEFT_SHIFT Z  &kp X           &kp C     &kp V                             &kp B             &kp TAB                               &kp APOS                          &kp N                &kp M  &kp COMMA  &mt SLASH PERIOD  &mt KP_EQUAL SEMI
 &kp LEFT_ALT      &kp LEFT_ARROW  &kp CAPS  &lt_to_layer_0 5 INTERNATIONAL_5  &mt LEFT_GUI RET  &lt_to_layer_0 1 INTERNATIONAL_5      &lt_to_layer_0 2 INTERNATIONAL_5  &mt RIGHT_GUI SPACE                                      &kp RIGHT_ARROW
             >;
 
@@ -91,18 +91,18 @@
 
         FUNCTION {
             bindings = <
-&trans        &trans        &trans        &trans        &trans                      &trans        &trans  &trans  &trans  &bt BT_SEL 0
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &trans      &trans  &kp NUMBER_6  &kp N7  &kp N8  &kp N9  &kp N0
-&trans        &trans        &trans        &trans        &trans  &trans      &trans  &trans        &trans  &trans  &trans  &trans
-&trans        &trans        &trans        &trans        &trans  &trans      &trans  &trans                                &bt BT_SEL 1
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                      &kp NUMBER_6  &kp N7    &kp N8    &kp N9  &kp N0
+&trans        &trans        &trans        &trans        &trans  &trans      &trans  &trans        &mkp MB1  &mkp MB2  &trans  &trans
+&trans        &trans        &trans        &trans        &trans  &trans      &trans  &trans        &trans    &trans    &trans  &bt BT_SEL 0
+&trans        &trans        &trans        &trans        &trans  &trans      &trans  &trans                                    &bt BT_SEL 1
             >;
         };
 
         NUM {
             bindings = <
-&trans            &trans            &trans            &trans            &trans                                       &trans            &mkp MB4    &mkp MB5    &trans      &trans
-&kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)      &trans               &trans  &kp LS(NUMBER_6)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)
-&trans            &trans            &trans            &trans            &trans          &kp UP_ARROW         &trans  &trans            &mkp MB1    &mkp MB2    &trans      &trans
+&kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kt LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)                                   &kp LS(NUMBER_6)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)
+&trans            &trans            &trans            &trans            &trans          &trans               &trans  &trans            &trans      &trans      &trans      &trans
+&trans            &trans            &trans            &trans            &trans          &kp UP_ARROW         &trans  &trans            &trans      &trans      &trans      &trans
 &trans            &trans            &trans            &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW      &trans  &trans                                                &trans
             >;
         };
@@ -120,19 +120,19 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &mkp MB4  &mkp MB5  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB2  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                              &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
 
